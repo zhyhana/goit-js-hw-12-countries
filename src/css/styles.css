@@ -28,6 +28,8 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
+  border-radius: 3px;
 
-  outline: 1px solid violet;
+  border: 1px solid violet;
 }

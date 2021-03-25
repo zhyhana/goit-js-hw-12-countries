@@ -11,15 +11,15 @@ function onInputChange() {
   reset();
 
   let inputValue = refs.input.value.replace(/[^a-z]/gi, '');
-  let query = '';
+  let searchQuery = '';
 
-  query = inputValue;
+  searchQuery = inputValue;
 
-  if (!query) {
+  if (!searchQuery) {
     return;
   }
 
-  API.fetchCountries(query)
+  API.fetchCountries(searchQuery)
     .then(renderCountryCard)
     .catch(err => {
       alert('Введите более корректный запрос');
